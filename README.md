@@ -1,6 +1,6 @@
 # Camera-car
 
-Kouluprojekti, jossa minun tehtäväni oli käyttöjärjestelmän rakentaminen Raspberry Pi:n avulla. 
+Kouluprojekti, jossa tehtäväni oli käyttöjärjestelmän rakentaminen Raspberry Pi:n avulla. 
 
 Raspberry Pi:llä käynnistetään Apache2 ohjelmisto, joka tekee Raspberry Pi:stä verkkopalvelimen lähiverkkoon. Lisäksi Raspberry Pi:lle käynnistetään raspi_auto.py ohjelma, joka huolehtii käyttäjän lähettämän datan käsittelystä, USB-kameran ja GPIO-pinnien käytöstä, sekä ohjauskomentojen lähettämisestä Arduinolle USB:n kautta. 
 
