@@ -1,0 +1,48 @@
+
+<!-- Base structure of UI -->
+<!-- index.html file is fetched by starting apache2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspi_auto</title>
+    <link rel="stylesheet" href="raspi_auton_UI.css">  <!-- Define stylesheet, css file-->
+</head>
+<body>
+
+    <div id="main">
+
+        <div class="recentPictures">
+            <button class="buttonPicture" id="previousPic">.</button>
+            <div class="container">
+                <img id="qualityPicture" src="qualityPicture", alt="High-Quality Picture"/>
+            </div>
+            <button class="buttonPicture" id="nextPic">.</button>
+        </div>
+
+        <div class="container">
+            <img id="videoStream" src="videoStream" alt="Video Stream"/>
+        </div>
+
+        <div class="cameraButtons">
+            <button class="buttonCam" id="camUp">Ylös</button>
+            <button class="buttonCam" id="camLeft">Vasen</button>
+            <button class="buttonCam" id="takePicture">Ota kuva</button>
+            <button class="buttonCam" id="camRight">Oikea</button>
+            <button class="buttonCam" id="camDown">Alas</button>
+        </div>
+
+        <div class="controllers">
+            <button class="buttonControl" id="vasen">&larr;</button>
+            <div id="wrapper"></div>
+            <button class="buttonControl" id="oikea">&rarr;</button>
+        </div>
+
+        <script src="raspi_auton_UI.js"></script> <!-- Define javascript file-->
+
+    </div>
+
+</body>
+</html>

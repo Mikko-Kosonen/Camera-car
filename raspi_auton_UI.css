@@ -1,0 +1,118 @@
+
+/* Styling of the UI. All buttons have same functionality, but different styling. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(61, 125, 136);
+}
+
+/* Stack components vertically in the center */
+#main {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 20px; 
+}
+
+#container{
+  border: 1px solid #000000;
+}
+
+/* Wrapper is the box around the joystick */
+#wrapper {
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.joystick {
+  background-color: rgb(0, 0, 0);
+  border-radius: 100%;
+  cursor: pointer;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  user-select: none;
+}
+
+.recentPictures {
+  display: flex;  /* Align items evenly and horizontally inside the recentPictures container */
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttonPicture {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 7px 10px;
+}
+
+.buttonCam {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.cameraButtons {
+  display: flex; 
+  justify-content: center;
+  gap: 5px;
+}
+
+.buttonControl {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 50px 15px;
+}
+
+.controllers {
+  display: flex; 
+  justify-content: center;
+  gap: 10px; 
+}
+
+button:active {
+  background-color: #0056b3; 
+}
+
+.container {
+  width: 300px;
+  height: 170px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container img{
+  width: 300px;
+  height: 230px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+}
